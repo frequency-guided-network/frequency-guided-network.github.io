@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=2">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision
+            <!--
+            <div class="is-size-3 has-text-grey p-4">publish</div>
+            -->
+          </h1>
+          <!--
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="Author Website" target="_blank">Author</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Institution</span>
+          </div>
+          -->
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link.
+              <span class="link-block">
+                <a href="/static/assets/alldieck2022phorhum.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- arxiv Link.
+              <span class="link-block">
+                <a href="http://arxiv.org/abs/2204.08906" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Code Link.
+              <span class="link-block">
+                <a href="#code"
+                   class="button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-download"></i>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- teaser
+<section class="hero p-6">
+  <div class="container is-max-desktop has-text-centered">
+    <figure class="image">
+      <img src="/static/images/teaser.png">
+    </figure>
+    <p class="is-light p-3"> teaser intro </p>
+  </div>
+</section>
+-->
+
+
+<section class="hero is-light p-6">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-10-desktop is-12-tablet">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The deep learning-based automatic and precise segmentation of dental plaque facilitates providing direct guidance to prevent oral diseases.
+            However, existing methods still suffer from low-contrast vision features and severe obstructions in ambiguous regions between dental plaque and teeth.
+            This challenge makes plaque detection difficult to perform accurately without using medical dyeing reagents.
+            We propose a Frequency-Guided Network (FGN) for dental plaque segmentation in extremely low-contrast regions, even beyond the human vision ability.
+            The key motivation is to pay strong attention to the plaque clusters by directly disentangling the high-frequency edges in the vicinity of the teeth and gingiva.
+            Moreover, we propose a novel high-to-low frequency multiple tasks segmentation framework, exploiting high-frequency edges' guidance to refine the plaque regions.
+            Our newly-designed network can capture the plaque's global clues through the robust decoupling and boundary-augmenting paradigm.
+            Our method outperforms existing high-performance segmentation methods. Meanwhile, the user studies verify that our method achieves better results than experienced dentists.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Method</h2>
+    <figure class="image">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-10-desktop is-12-tablet">
+          <img src="/static/images/method.png">
+          <p class="is-light p-3">The illustration of our framework. In the HF phase (green box), we segment teeth and non-teeth regions using our frequency-guided network.
+            Specifically, we supervise the high-frequency edge and low-frequency body parts of the teeth, respectively.
+            In the frequency-driven refinement module (grey box), the HF phase result is refined using high-frequency augmentation and combined with the raw image.
+            In the LF phase (pink box), we use our frequency-guided network to segment the plaque and non-plaque regions, producing the final segmentation result.
+            Of which, ``$\textcircled{c}$" denotes concatenation and ``$\oplus$" denotes element-wise addition.</p>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- Video
+<section class="section">
+  <div class="container">
+    <h2 class="title">Video</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column  is-10-desktop is-12-tablet">
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/xxx"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Results</h2>
+
+  </div>
+</section>
+
+<!-- BibTeX
+<section class="section" id="BibTeX">
+  <div class="container">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>BibTeX
+}</code></pre>
+  </div>
+</section>
+-->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-12">
+        <div class="content has-text-centered">
+          <p>
+            This website uses the template provided by <a target="_blank"
+                                                          href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+            licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
