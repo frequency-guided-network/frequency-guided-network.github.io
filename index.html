@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css?v=2">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css?v=2">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script type="module"
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script type="text/javascript" id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
 
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
-            Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision
-            <!--
-            <div class="is-size-3 has-text-grey p-4">publish</div>
-            -->
-          </h1>
-          <!--
-          <div class="is-size-5 publication-authors">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">
+                        Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision
+                        <!--
+                        <div class="is-size-3 has-text-grey p-4">publish</div>
+                        -->
+                    </h1>
+                    <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="Author Website" target="_blank">Author</a>,
+              Yiming Jiang<sup>1</sup>,
             </span>
-          </div>
+                        <span class="author-block">
+              Wenfeng Song*<sup>2</sup>,
+            </span>
+                        <span class="author-block">
+              Shuai Li*<sup>1,3</sup>,
+            </span>
+                        <span class="author-block">
+              Yuming Yang<sup>1</sup>,
+            </span>
+                        <span class="author-block">
+              Bin Xia<sup>4</sup>,
+            </span>
+                        <span class="author-block">
+              Aimin Hao<sup>3</sup>,
+            </span>
+                        <span class="author-block">
+              Hong Qin<sup>5</sup>
+            </span>
+                    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Institution</span>
-          </div>
-          -->
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Beihang University,</span>
+                        <span class="author-block"><sup>2</sup>Beijing Information Science and Technology University,</span>
+                        <span class="author-block"><sup>3</sup>Zhongguancun Laboratory,</span>
+                        <span class="author-block"><sup>4</sup>Peking University School and Hospital of Stomatology,</span>
+                        <span class="author-block"><sup>5</sup>Stony Brook University</span>
+                    </div>
 
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link.
-              <span class="link-block">
-                <a href="/static/assets/alldieck2022phorhum.pdf" target="_blank"
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF -->
+                            <span class="link-block">
+                <a href="/static/assets/xx.pdf" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (to be uploaded)</span>
                 </a>
-              </span> -->
-              <!-- arxiv Link.
-              <span class="link-block">
-                <a href="http://arxiv.org/abs/2204.08906" target="_blank"
+              </span>
+                            <!-- Supplementary Material -->
+                            <span class="link-block">
+                <a href="/static/assets/Supplementary_Material.pdf" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Supplementary Material</span>
                 </a>
-              </span> -->
-              <!-- Code Link.
-              <span class="link-block">
-                <a href="#code"
-                   class="button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-download"></i>
-                  </span>
-                  <span>Model</span>
-                </a>
-              </span> -->
+              </span>
+                            <!-- arxiv Link.
+                            <span class="link-block">
+                              <a href="http://arxiv.org/" target="_blank"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="ai ai-arxiv"></i>
+                                </span>
+                                <span>arXiv</span>
+                              </a>
+                            </span> -->
+                            <!-- Code Link.
+                            <span class="link-block">
+                              <a href="#code"
+                                 class="button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                <span>Model</span>
+                              </a>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- teaser
@@ -104,46 +135,61 @@
 
 
 <section class="hero is-light p-6">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-10-desktop is-12-tablet">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            The deep learning-based automatic and precise segmentation of dental plaque facilitates providing direct guidance to prevent oral diseases.
-            However, existing methods still suffer from low-contrast vision features and severe obstructions in ambiguous regions between dental plaque and teeth.
-            This challenge makes plaque detection difficult to perform accurately without using medical dyeing reagents.
-            We propose a Frequency-Guided Network (FGN) for dental plaque segmentation in extremely low-contrast regions, even beyond the human vision ability.
-            The key motivation is to pay strong attention to the plaque clusters by directly disentangling the high-frequency edges in the vicinity of the teeth and gingiva.
-            Moreover, we propose a novel high-to-low frequency multiple tasks segmentation framework, exploiting high-frequency edges' guidance to refine the plaque regions.
-            Our newly-designed network can capture the plaque's global clues through the robust decoupling and boundary-augmenting paradigm.
-            Our method outperforms existing high-performance segmentation methods. Meanwhile, the user studies verify that our method achieves better results than experienced dentists.
-          </p>
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-10-desktop is-12-tablet">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        The deep learning-based automatic and precise segmentation of dental plaque facilitates
+                        providing direct guidance to prevent oral diseases.
+                        However, existing methods still suffer from low-contrast vision features and severe obstructions
+                        in ambiguous regions between dental plaque and teeth.
+                        This challenge makes plaque detection difficult to perform accurately without using medical
+                        dyeing reagents.
+                        We propose a Frequency-Guided Network (FGN) for dental plaque segmentation in extremely
+                        low-contrast regions, even beyond the human vision ability.
+                        The key motivation is to pay strong attention to the plaque clusters by directly disentangling
+                        the high-frequency edges in the vicinity of the teeth and gingiva.
+                        Moreover, we propose a novel high-to-low frequency multiple tasks segmentation framework,
+                        exploiting high-frequency edges' guidance to refine the plaque regions.
+                        Our newly-designed network can capture the plaque's global clues through the robust decoupling
+                        and boundary-augmenting paradigm.
+                        Our method outperforms existing high-performance segmentation methods. Meanwhile, the user
+                        studies verify that our method achieves better results than experienced dentists.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+        <!--/ Abstract. -->
     </div>
-    <!--/ Abstract. -->
-  </div>
 </section>
 
 
 <section class="section">
-  <div class="container" style="text-align:center;">
-    <h2 class="title">Method</h2>
-    <figure class="image">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-10-desktop is-12-tablet">
-          <img src="/static/images/method.png" style="width:800px;  height:500px">
-          <p class="is-light p-3">The illustration of our framework. In the HF phase (green box), we segment teeth and non-teeth regions using our frequency-guided network.
-            Specifically, we supervise the high-frequency edge and low-frequency body parts of the teeth, respectively.
-            In the frequency-driven refinement module (grey box), the HF phase result is refined using high-frequency augmentation and combined with the raw image.
-            In the LF phase (pink box), we use our frequency-guided network to segment the plaque and non-plaque regions, producing the final segmentation result.
-            Of which, ``$\textcircled{c}$" denotes concatenation and ``$\oplus$" denotes element-wise addition.</p>
-        </div>
-      </div>
-    </figure>
-  </div>
+    <div class="container" style="text-align:center;">
+        <h2 class="title">Method</h2>
+        <figure class="image">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-10-desktop is-12-tablet">
+                    <img src="/static/images/method.png" style="width:800px;  height:500px">
+                    <p class="is-light p-3">
+                      <strong>The illustration of our framework.</strong> In the HF phase (green box), we segment
+                        teeth and non-teeth regions using our frequency-guided network.
+                        Specifically, we supervise the high-frequency edge and low-frequency body parts of the teeth,
+                        respectively.
+                        In the frequency-driven refinement module (grey box), the HF phase result is refined using
+                        high-frequency augmentation and combined with the raw image.
+                        In the LF phase (pink box), we use our frequency-guided network to segment the plaque and
+                        non-plaque regions, producing the final segmentation result.
+                        Of which, ``$\textcircled{c}$" denotes concatenation and ``$\oplus$" denotes element-wise
+                        addition.
+                    </p>
+                </div>
+            </div>
+        </figure>
+    </div>
 </section>
 
 <!-- Video
@@ -162,23 +208,202 @@
 </section>
 -->
 
-
 <section class="section">
-  <div class="container">
-    <div style="text-align:center;">
-      <h2 class="title">More Method Details</h2>
-      <iframe src="/static/assets/More_Method_Details.pdf" width="1000" height="900"></iframe>
-    </div>
-  </div>
-</section>
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-10-desktop is-12-tablet">
+                <div class="content has-text-justified is-centered has-text-centered">
+                    <h2 class="title" style="text-align:center;">More Experiment and Evaluation Details</h2>
+                    <p>
+                        We gives more details as complementary to the
+                        paper’s Experiment and Evaluation parts.
+                    </p>
+                    <div>
+                        <h2 class="subtitle">Parameter analysis</h2>
+                        <p>
+                            We analyze the critical parameters of high-frequency augmentation and the attention
+                            mechanism positions.
+                        </p>
+                        <div>
+                            <figure class="image">
+                                <div class="columns is-centered has-text-centered">
+                                    <div class="column is-10-desktop is-12-tablet">
+                                        <img src="/static/images/table I.png" style="width:500px;  height:250px">
+                                    </div>
+                                </div>
+                            </figure>
+                            <p>
+                                <strong>The high-frequency augmentation parameters.</strong> The high-frequency
+                                augmentation
+                                parameters affect the LF phase's input, influencing our methods' performance. The two
+                                main
+                                parameters are S_d and S_o. To investigate the impact of these parameters, we perform
+                                high-frequency augmentation with three
+                                different sets of parameter values on the teeth mask. This results in three datasets,
+                                namely
+                                ENHAN-1, ENHAN-2, and ENHAN-3. Then, we evaluate our methods on each dataset as the
+                                input of
+                                the LF phase to
+                                assess the mIoU and mAcc. The result are shown in <strong>Table I</strong>. We observe
+                                that
+                                the ENHAN-1 dataset performs slightly better than the other two. As a result, we
+                                empirically
+                                select the parameter values from ENHAN-1 for our methods.
+                            </p>
+                        </div>
+                      <p></p>
+                        <div>
+                            <figure class="image">
+                                <div class="columns is-centered has-text-centered">
+                                    <div class="column is-10-desktop is-12-tablet">
+                                        <img src="/static/images/table II.png" style="width:500px;  height:350px">
+                                    </div>
+                                </div>
+                            </figure>
+                            <p>
+                                <strong>The attention modules positions.</strong> Furthermore, we investigate the impact
+                                of
+                                adding the attention modules at different positions in our method. We add the channel
+                                and spatial attention modules after certain positions in parallel. Specifically, we
+                                consider four different positions for adding the attention modules: no attention module,
+                                after the ASPP module, after the edge part of the
+                                decoupling module, and after the last feature map before the final upsampling. The
+                                effect of the
+                                attention modules varies for the two variants of our method.
+                                <strong>Table II</strong> shows the results obtained for the four different positions on
+                                datasets ENHAN-1 and ENHAN-3. The results are similar for each position on both
+                                datasets, but the gaps between different positions are significant. Adding the attention
+                                modules after the last feature map results in the best performance, increasing 0.54% in
+                                mIoU and 0.69% in mAcc.
+                            </p>
+                        </div>
+                      <p></p>
+                        <div>
+                            <figure class="image">
+                                <div class="columns is-centered has-text-centered">
+                                    <div class="column is-10-desktop is-12-tablet">
+                                        <img src="/static/images/attention_module_result_vision.png"
+                                             style="width:800px;  height:400px">
+                                        <p class="is-light p-3"><strong>Fig.1. Qualitative comparisons with four attention
+                                            modules
+                                            positions.</strong> In the top row, we demonstrate the raw image and ground truth for
+                                            reference. We conduct experiments with four different positions for adding
+                                            the attention modules. In the second to fifth rows, we show the results and
+                                            Gradient-weighted Class Activation Mappings of the final layer. Although
+                                            some CAM diagrams exhibit the checkerboard
+                                            pattern due to grad-CAM's limitations, it does not affect the maps'
+                                            interpretation. The
+                                            four positions for the attention modules are as follows: (1) no attention
+                                            module,
+                                            (2) attention modules added after the ASPP module, (3) attention modules
+                                            added after the edge part of the decoupling module, and (4) attention
+                                            modules added after
+                                            the last feature map and before the final upsampling.</p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p>
+                                <strong>Fig.1.</strong> provides visualization results of the final layer's
+                                Gradient-weighted Class Activation Mappings (CAM). Notably, adding the attention modules
+                                after the
+                                last feature map allows the network to focus more on the areas of the teeth not covered
+                                by plaque.
+                                Although some CAM diagrams exhibit the checkerboard pattern due to grad-CAM's
+                                limitations,
+                                it does not affect the maps' interpretation.
+                            </p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <div>
+                        <h2 class="subtitle">Visual analysis and visualization results</h2>
+                      <p></p>
+                        <div>
 
-<section class="section">
-  <div class="container">
-    <div style="text-align:center;">
-      <h2 class="title">More Experiment and Evaluation Details</h2>
-      <iframe src="/static/assets/More_Experiment_Details.pdf" width="1000" height="900"></iframe>
-    </div>
-  </div>
+                            <figure class="image">
+                                <div class="columns is-centered has-text-centered">
+                                    <div class="column is-10-desktop is-12-tablet">
+                                        <img src="/static/images/loss_mIoU.png" style="width:800px;  height:200px">
+                                        <p>
+                                          <strong>Fig.2. Training loss and validation mIoU of the HF and LF phases in
+                                            training.</strong>
+                                            (a)
+                                            Shows loss and mIoU of the HF phase, (b) shows loss and mIoU of the LF phase
+                                            of
+                                            Ours, and (c) shows loss and mIoU of the LF phase of Ours-H.
+                                        </p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p>
+                                <strong>Visualization results of the training process metrics.</strong> In every
+                                training
+                                phase, the training loss drops, and the validation mIoU rises with increased epochs. The
+                                training loss and validation mIoU of the HF phase are shown in <strong>Fig.2(a)</strong>.
+                                The training loss and validation mIoU of the LF phase of our methods are shown in
+                                <strong>Fig.2(b)</strong> and <strong>Fig.2(c)</strong>. In three figures, the blue line
+                                shows mIoU, and the red line shows training loss. The left horizontal axis represents
+                                validation mIoU, the right horizontal axis represents training loss, and the vertical
+                                axis
+                                denotes epochs. The loss curve is smoothed using a smoothing rate of 0.99, while the
+                                mIoU
+                                curve is smoothed with a smoothing rate of 0.9. From these figures, it can be observed
+                                that
+                                the training loss drops, and the validation mIoU rises with the increase in epochs from
+                                20
+                                to 160. Although the curve of training loss shows large fluctuations after 100 epochs,
+                                it is
+                                important to note that the loss curve actually drops significantly more from 0 to 20
+                                epochs
+                                when compared to the fluctuations seen after 100 epochs. In summary, the curves in all
+                                three
+                                figures start to fluctuate after 100 epochs, indicating that the model has been trained
+                                to
+                                its optimal performance.
+                            </p>
+                        </div>
+                      <p></p>
+                        <div>
+
+                            <figure class="image">
+                                <div class="columns is-centered has-text-centered">
+                                    <div class="column is-10-desktop is-12-tablet">
+                                        <img src="/static/images/visual_edge.png" style="width:800px;  height:400px">
+                                        <p>
+                                          <strong>Fig.3. Visualization segmentation results in HF and LF phases for the edge
+                                            and
+                                            body.</strong> The binary edge maps correspond with the boundary of teeth and plaque
+                                            precisely. The binary body and edge maps are complementary to each other.
+                                            The
+                                            third and fourth rows of the visualization show the binary body map and the
+                                            binary edge map in the HF phase, while the fifth and sixth rows show the
+                                            binary
+                                            body map and the binary edge map in the LF phase.
+                                        </p>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p>
+                                <strong>Visualization results of the body and edge binary map.</strong> The
+                                visualization of
+                                the body and edge binary map generated by the HF and LF phases are shown in
+                                <strong>Fig.3</strong>. In the HF phase, our methods focus on segmenting the teeth and
+                                non-teeth regions, resulting in a binary edge map that accurately identifies the edges
+                                of
+                                teeth. Our approaches can precisely locate the edge of teeth when some of the boundaries
+                                between teeth and gingiva are blurry. In the LF phase, we segment the plaque and
+                                non-plaque
+                                regions, leading to a binary edge map highlighting the edges of both plaque and teeth.
+                                The
+                                binary body map is complementary to the corresponding edge binary map, providing
+                                additional
+                                information on the location of plaque and teeth within the image.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 
 <!-- BibTeX
@@ -192,23 +417,22 @@
 -->
 
 <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-12">
-        <div class="content has-text-centered">
-          <p>
-            This website uses the template provided by <a target="_blank"
-                                                          href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
-            licensed under a
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-              Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-12">
+                <div class="content has-text-centered">
+                    <p>
+                        This website uses the template provided by <a target="_blank"
+                                                                      href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+                        licensed under a
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                            Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
-
 
 
 </body>
