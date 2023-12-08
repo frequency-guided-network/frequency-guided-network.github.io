@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Frequency-Guided Network for Low-contrast Dental Plaque Segmentation Beyond Human Vision</title>
+    <title>Frequency-Guided Network for Low-contrast Staining-free Dental Plaque Segmentation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
           rel="stylesheet">
@@ -143,22 +143,15 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        The deep learning-based automatic and precise segmentation of dental plaque facilitates
-                        providing direct guidance to prevent oral diseases.
-                        However, existing methods still suffer from low-contrast vision features and severe obstructions
-                        in ambiguous regions between dental plaque and teeth.
-                        This challenge makes plaque detection difficult to perform accurately without using medical
-                        dyeing reagents.
-                        We propose a Frequency-Guided Network (FGN) for dental plaque segmentation in extremely
-                        low-contrast regions, even beyond the human vision ability.
-                        The key motivation is to pay strong attention to the plaque clusters by directly disentangling
-                        the high-frequency edges in the vicinity of the teeth and gingiva.
-                        Moreover, we propose a novel high-to-low frequency multiple tasks segmentation framework,
-                        exploiting high-frequency edges' guidance to refine the plaque regions.
-                        Our newly-designed network can capture the plaque's global clues through the robust decoupling
-                        and boundary-augmenting paradigm.
-                        Our method outperforms existing high-performance segmentation methods. Meanwhile, the user
-                        studies verify that our method achieves better results than experienced dentists.
+                        The current clinical detection of dental plaque relies on medical staining reagents and professional intervention. 
+                        The deep learning-based automatic staining-free dental plaque segmentation offers an alternative, eliminating the need for medical staining reagents and enabling patients to perform daily plaque detection at home.
+                        However, existing methods still suffer from the extremely low-contrast visual features between unstained dental plaque and healthy teeth.
+                        To address this issue, we propose a Frequency-Guided Network (FGN) for staining-free dental plaque segmentation in extremely low-contrast regions, surpassing human visual capabilities. 
+                        Considering the characteristic distribution of dental plaque clusters at the junction of teeth and gingiva, our key motivation is to disentangle high-frequency regions and give special attention to plaque in these areas.
+                        In addition, we introduce a novel high-to-low frequency multiple tasks segmentation framework that leverages the guidance from high-frequency edges to refine the plaque regions. 
+                        Our newly designed network employs a robust decoupling and boundary-augmenting paradigm to capture the global clues of the plaque.
+                        Through extensive evaluations, our method outperforms existing high-performance segmentation methods. 
+                        Furthermore, user studies confirm that our approach achieves superior results compared to experienced dentists.
                     </p>
                 </div>
             </div>
