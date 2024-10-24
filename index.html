@@ -143,15 +143,11 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        The current clinical detection of dental plaque relies on medical staining reagents and professional intervention. 
-                        The deep learning-based automatic staining-free dental plaque segmentation offers an alternative, eliminating the need for medical staining reagents and enabling patients to perform daily plaque detection at home.
-                        However, existing methods still suffer from the extremely low-contrast visual features between unstained dental plaque and healthy teeth.
-                        To address this issue, we propose a Frequency-Guided Network (FGN) for staining-free dental plaque segmentation in extremely low-contrast regions, surpassing human visual capabilities. 
-                        Considering the characteristic distribution of dental plaque clusters at the junction of teeth and gingiva, our key motivation is to disentangle high-frequency regions and give special attention to plaque in these areas.
-                        In addition, we introduce a novel high-to-low frequency multiple tasks segmentation framework that leverages the guidance from high-frequency edges to refine the plaque regions. 
-                        Our newly designed network employs a robust decoupling and boundary-augmenting paradigm to capture the global clues of the plaque.
-                        Through extensive evaluations, our method outperforms existing high-performance segmentation methods. 
-                        Furthermore, user studies confirm that our approach achieves superior results compared to experienced dentists.
+                        Traditional dental plaque detection relies on medical staining reagents and professional intervention. Deep learning-based automatic staining-free dental plaque segmentation provides an alternative for patients to perform plaque detection at home without staining reagents. However, existing methods still struggle with low-contrast visual features between unstained plaque and healthy teeth.
+                        To address this, we propose a Frequency-Guided Network (FGN) for low-contrast staining-free dental plaque segmentation. 
+                        We observe that dental plaque tends to concentrate specifically near the junction between the teeth and the gingiva. This junction demonstrates abrupt changes in pixel values, indicating high-frequency regions in the image. In other words, dental plaque tends to appear near the high-frequency regions of oral endoscope images. Exploiting this characteristic, we employ a frequency-guided decoupling module to separate the image into high-frequency and low-frequency regions automatically and expand the high-frequency region to encompass nearby potential dental plaque. Then we supervise two regions individually to specifically focus on the expended high-frequency region for localizing nearby dental plaque.
+                        Additionally, we propose a high-to-low frequency multiple tasks framework. In the first phase, the network segments the teeth region, and then we input the teeth mask into the second phase. In the second stage, the teeth mask allows us to have a higher frequency at the junction between the teeth and gums, thereby enhancing the effectiveness of frequency-guided decoupling. Furthermore, FGN integrates a frequency-driven refinement module to enhance the guidance quality of the teeth mask for the second phase.
+                        Extensive evaluations of the oral endoscope dataset demonstrate that our method outperforms existing high-performance segmentation methods. User studies also confirm that our approach achieves superior results to experienced dentists. 
                     </p>
                 </div>
             </div>
@@ -209,7 +205,7 @@
             <div class="column is-10-desktop is-12-tablet">
                 <div class="content has-text-justified">
                     <p>
-                        Please refer to <a href="/static/assets/Supplementary_Material.pdf">Supplementary Material</a>
+                        Please refer to <a href="/static/assets/xx.pdf">Supplementary Material (to be uploaded)</a>
                         for more details on the Method section of the article.
                     </p>
                 </div>
